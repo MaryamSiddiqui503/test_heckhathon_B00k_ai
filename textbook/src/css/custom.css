@@ -1,0 +1,204 @@
+/**
+ * Academic textbook styling for Physical AI & Humanoid Robotics textbook
+ */
+
+/* Academic color palette */
+:root {
+  --ifm-color-primary: #1a365d; /* Dark blue for academic feel */
+  --ifm-color-primary-dark: #142847;
+  --ifm-color-primary-darker: #0f1e36;
+  --ifm-color-primary-darkest: #0a1425;
+  --ifm-color-primary-light: #244a72;
+  --ifm-color-primary-lighter: #2e5f87;
+  --ifm-color-primary-lightest: #38749c;
+  --ifm-code-font-size: 90%;
+  --docusaurus-highlighted-code-line-bg: rgba(26, 54, 93, 0.2);
+
+  /* Academic typography colors */
+  --ifm-font-color-base: #2c3e50;
+  --ifm-font-color-base-inverse: #ffffff;
+  --ifm-font-color-secondary: #7f8c8d;
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #f8f9fa;
+
+  /* Academic content styling */
+  --ifm-heading-font-weight: 600;
+  --ifm-heading-line-height: 1.3;
+  --ifm-paragraph-margin-bottom: 1rem;
+  --ifm-pre-padding: 1rem;
+  --ifm-pre-background: #f6f8fa;
+  --ifm-blockquote-color: #34495e;
+  --ifm-blockquote-border-left-width: 4px;
+  --ifm-blockquote-padding-horizontal: 1rem;
+  --ifm-blockquote-padding-vertical: 0.5rem;
+}
+
+/* Dark mode for academic setting */
+[data-theme='dark'] {
+  --ifm-color-primary: #4a90e2;
+  --ifm-color-primary-dark: #3a7bc8;
+  --ifm-color-primary-darker: #2a66ae;
+  --ifm-color-primary-darkest: #1a5194;
+  --ifm-color-primary-light: #5a9ffa;
+  --ifm-color-primary-lighter: #6aa5ff;
+  --ifm-color-primary-lightest: #7ab0ff;
+  --docusaurus-highlighted-code-line-bg: rgba(74, 144, 226, 0.2);
+
+  /* Dark mode academic colors */
+  --ifm-font-color-base: #e0e0e0;
+  --ifm-font-color-secondary: #b0b0b0;
+  --ifm-background-color: #1a1a1a;
+  --ifm-background-surface-color: #222222;
+  --ifm-pre-background: #2d2d2d;
+  --ifm-blockquote-color: #c0c0c0;
+}
+
+/* Academic typography enhancements */
+.markdown {
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+/* Heading styles for textbook */
+h1 {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-weight: 700;
+  border-bottom: 2px solid var(--ifm-color-primary);
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-weight: 500;
+  color: #2c3e50;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Academic paragraph styling */
+.markdown p {
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+
+/* Code block styling for academic context */
+.prism-code {
+  border-radius: 4px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
+/* Table styling for academic content */
+.markdown table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
+
+.markdown table th,
+.markdown table td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.markdown table th {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  font-weight: 600;
+}
+
+/* Blockquote styling for definitions and quotes */
+blockquote {
+  border-left: 4px solid var(--ifm-color-primary);
+  background-color: var(--ifm-background-surface-color);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+
+/* Academic sidebar styling */
+.menu {
+  font-size: 0.9rem;
+}
+
+.menu__list-item-collapsible {
+  margin-bottom: 0.25rem;
+}
+
+.menu__link {
+  padding: 0.5rem 1rem;
+}
+
+/* Content container for better academic layout */
+.container {
+  max-width: 1200px;
+}
+
+/* Navigation styling */
+.navbar {
+  background-color: var(--ifm-color-primary);
+  color: white;
+}
+
+.navbar__title {
+  font-weight: 600;
+  color: white;
+}
+
+.navbar__link {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.navbar__link:hover {
+  color: white;
+}
+
+/* Footer styling */
+.footer {
+  background-color: var(--ifm-color-primary-darkest);
+  color: white;
+}
+
+/* Card styling for examples and notes */
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Better spacing for academic content */
+.section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Learning objectives styling */
+.learning-objectives {
+  background-color: var(--ifm-background-surface-color);
+  border-left: 4px solid var(--ifm-color-primary);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.learning-objectives h3 {
+  margin-top: 0;
+  color: var(--ifm-color-primary);
+}
